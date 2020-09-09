@@ -1,49 +1,225 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - XayDung</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">XayDung</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <partial name="_LoginPartial" />
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+@Html.Partial("_Head")
+@*<partial name="_Head" />*@
+<body class="home page-template page-template-templates page-template-template-home page-template-templatestemplate-home-php page page-id-2 wp-custom-logo no-sidebar-center boxed_layout">
+    <div id="page" class="site">
+        <div class="nv-top-header-wrap">
+            <div class="cv-container">
+                <div class="nv-top-left-section-wrapper">
+                    <nav id="top-navigation" class="top-navigation" role="navigation">
+                        <div class="menu-head-top-container">
+                            <ul id="top-menu" class="menu">
+                                <li id="menu-item-101" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-101"><a href="tel:0973778999"><a><i class="fa fa-phone"></i>0973 778 999</a></a></li>
+                                <li id="menu-item-102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-102">
+                                    <a href="mailto:">
+                                        <div class="text-white"><i class="fa fa-envelope"></i>@@gmail.com</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- #site-navigation -->
+                </div>
+                <!-- .nv-top-left-section-wrapper -->
+                <div class="nv-top-right-section-wrapper"></div>
+                <!-- .nv-top-right-section-wrapper -->
+            </div>
+            <!-- .cv-container -->
+        </div>
+        <!-- .nv-top-header-wrap -->
+        <header id="masthead" class="site-header" role="banner">
+            <div class="nv-logo-section-wrapper">
+                <div class="cv-container">
+                    <div class="site-branding">
+                        <div class="site-logo">
+                            <a href="index.html" class="custom-logo-link" rel="home" itemprop="url">
+                                <noscript><img src="wp-content/uploads/2019/02/banner-logo-xay-nha.png" class="custom-logo" alt="Kiến An Vinh" itemprop="logo"></noscript>
+                                <img src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://thietkenha.pro/wp-content/uploads/2019/02/banner-logo-xay-nha.png" class="lazyload custom-logo" alt="Kiến An Vinh" itemprop="logo">
+                            </a>
+                        </div>
+                        <p class="site-title"><a href="index.html" rel="home">Công ty thiết kế nhà đẹp 2020 Kiến An Vinh</a></p>
+                        <p class="site-description">Chuyên thiết kế nhà, biệt thự đẹp giá rẻ</p>
+                    </div>
+                    <!-- .site-branding -->
+                    <div class="nv-header-ads-area"></div>
+                    <!-- .nv-header-ads-area -->
+                </div>
+                <!-- .cv-container -->
+            </div>
+            <!-- .nv-logo-section-wrapper -->
+            <div id="nv-menu-wrap" class="nv-header-menu-wrapper">
+                <div class="nv-header-menu-block-wrap">
+                    <div class="cv-container">
+                        <div class="nv-home-icon"> <a href="index.html" rel="home"> <i class="fa fa-home"> </i> </a></div>
+                        <!-- .nv-home-icon --> <a href="javascript:void(0)" class="menu-toggle hide"> <i class="fa fa-navicon"> </i> </a>
+                        <nav id="site-navigation" class="main-navigation" role="navigation">
+                            <div class="menu-main-menu-container">
+                                <ul id="primary-menu" class="menu">
+                                    <li id="menu-item-3533" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-3533"><a href="http://thietkenha.pro/" aria-current="page">Trang chủ</a></li>
+                                    <li id="menu-item-20870" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-20870">
+                                        <a href="index.html#">Thiết kế</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-20867" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20867 nv-cat-3"><a href="https://thietkenha.pro/thiet-ke-nha-pho">800 Mẫu Thiết Kế Nhà Đẹp | Mẫu Nhà Đẹp 2020 Đạt Chuẩn Đẹp Mê Ly Hút Hồn</a></li>
+                                            <li id="menu-item-117" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-117 nv-cat-2"><a href="https://thietkenha.pro/thiet-ke-biet-thu">Tổng Hợp Mẫu Thiết kế biệt thự &#8211; Mẫu biệt thự đẹp say mê hút hồn 2020</a></li>
+                                            <li id="menu-item-124" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-124 nv-cat-50"><a href="https://thietkenha.pro/thiet-ke-nha-hang">Xu hướng thiết kế nhà hàng đẹp mới nhất 2020 &#8211; Kiến An Vinh</a></li>
+                                            <li id="menu-item-122" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-122 nv-cat-53"><a href="https://thietkenha.pro/thiet-ke-khach-san">Thiết kế khách sạn mang bạn đến thành công trong thương hiệu</a></li>
+                                            <li id="menu-item-118" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-118 nv-cat-48"><a href="https://thietkenha.pro/thiet-ke-cafe">Xu hướng thiết kế cafe đẹp mới nhất 2020 &#8211; Kiến An Vinh</a></li>
+                                            <li id="menu-item-105" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-105 nv-cat-51"><a href="https://thietkenha.pro/thiet-ke-nha-xuong">Hé lộ mẫu Thiết kế nhà xưởng bạn cần phải biết</a></li>
+                                            <li id="menu-item-120" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-120 nv-cat-61"><a href="https://thietkenha.pro/thiet-ke-chua-mieu">Công Ty Chuyên Thiết Kế Chùa Miếu đẹp nhất hiện nay</a></li>
+                                            <li id="menu-item-108" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-108 nv-cat-49"><a href="https://thietkenha.pro/thiet-ke-showroom">Thiết kế Showroom thông minh hơn thay vì tù túng</a></li>
+                                            <li id="menu-item-107" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-107 nv-cat-57"><a href="https://thietkenha.pro/thiet-ke-resort">Top 10 thiết kế Resort hoàn hảo cho người đầu tư</a></li>
+                                            <li id="menu-item-109" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-109 nv-cat-60"><a href="https://thietkenha.pro/thiet-ke-sieu-thi">Thiết Kế Siêu Thị</a></li>
+                                            <li id="menu-item-111" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-111 nv-cat-62"><a href="https://thietkenha.pro/xay-nha-cho-thue">Xây Nhà Cho Thuê</a></li>
+                                            <li id="menu-item-119" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-119 nv-cat-54"><a href="https://thietkenha.pro/thiet-ke-cao-oc-van-phong">Thiết Kế Cao Ốc &#8211; Văn Phòng xưa và nay có gì khác</a></li>
+                                            <li id="menu-item-121" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-121 nv-cat-58"><a href="https://thietkenha.pro/thiet-ke-cong-trinh-cong-cong">Thiết Kế Công Trình Công Cộng</a></li>
+                                            <li id="menu-item-123" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-123 nv-cat-59"><a href="https://thietkenha.pro/thiet-ke-khu-nghi-duong">Thiết Kế Khu Nghỉ Dưỡng</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-5505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5505">
+                                        <a href="index.html#">Thi công</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-112" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-112 nv-cat-56"><a href="https://thietkenha.pro/thi-cong-biet-thu">Thiết kế thi công nhà biệt thự</a></li>
+                                            <li id="menu-item-115" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-115 nv-cat-55"><a href="https://thietkenha.pro/thi-cong-nha-pho">Thiết kế thi công nhà trọn gói &#8211; Kiến An Vinh</a></li>
+                                            <li id="menu-item-114" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-114 nv-cat-64"><a href="https://thietkenha.pro/thi-cong-khach-san">Thiết kế Thi Công Khách Sạn</a></li>
+                                            <li id="menu-item-116" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-116 nv-cat-63"><a href="https://thietkenha.pro/thi-cong-nha-xuong">Thi Công Nhà Xưởng</a></li>
+                                            <li id="menu-item-18715" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18715 nv-cat-240"><a href="https://thietkenha.pro/thi-cong-nha-hang-tiec-cuoi-cafe">Thiết kế Thi công nhà hàng tiệc cưới &#8211; cafe</a></li>
+                                            <li id="menu-item-110" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-110 nv-cat-52"><a href="https://thietkenha.pro/xay-nha-lam-nha">Ép cọc bê tông &#8211; Xây nhà &#8211; Cải tạo nhà</a></li>
+                                            <li id="menu-item-113" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-113 nv-cat-65"><a href="https://thietkenha.pro/thi-cong-chua-mieu">Thi Công Chùa Miếu</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-3793" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3793">
+                                        <a href="index.html#">Bảng giá</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-21508" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21508"><a href="https://thietkenha.pro/bang-gia-thiet-ke-nha-pho.html">Bảng giá thiết kế nhà phố – kiến an vinh</a></li>
+                                            <li id="menu-item-21509" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21509"><a href="https://thietkenha.pro/bang-gia-thiet-ke-biet-thu.html">Bảng giá thiết kế biệt thự 2020 – Kiến An Vinh</a></li>
+                                            <li id="menu-item-5595" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5595"><a href="https://thietkenha.pro/don-gia-xay-dung-phan-tho-nha-pho-nam-2017.html">Đơn giá xây dựng phần thô và nhân công hoàn thiện 2020</a></li>
+                                            <li id="menu-item-5597" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5597"><a href="https://thietkenha.pro/don-gia-thi-cong-phan-tho-biet-thu.html">Đơn giá xây dựng nhà biệt thự 2020 – Xây dựng biệt thự trọn gói</a></li>
+                                            <li id="menu-item-5596" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5596"><a href="https://thietkenha.pro/bang-don-gia-thi-cong-phan-hoan-thien.html">thi công trọn gói nhà biệt thự, báo giá xây dựng trọn gói 2020</a></li>
+                                            <li id="menu-item-21643" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21643"><a href="https://thietkenha.pro/don-gia-thi-cong-xay-dung-nha-biet-thu.html">Đơn giá thi công biệt thự trọn gói</a></li>
+                                            <li id="menu-item-5590" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5590"><a href="https://thietkenha.pro/bang-gia-xay-dung.html">Thiết kế nhà giá rẻ, thi công nhà trọn gói giá rẻ – kiến an vinh</a></li>
+                                            <li id="menu-item-5598" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5598"><a href="https://thietkenha.pro/don-gia-thi-cong-va-thiet-ke-nha-xuong-dep-2.html">Đơn giá thi công nhà xưởng – thi công nhà tiền chế</a></li>
+                                            <li id="menu-item-24930" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24930"><a href="https://thietkenha.pro/don-gia-thi-cong-nha-xuong.html">Đơn giá thi công nhà xưởng A &#8211; Z</a></li>
+                                            <li id="menu-item-21510" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21510"><a href="https://thietkenha.pro/bang-gia-thiet-ke-ca-phe.html">Đơn giá thiết kế quán cà phê</a></li>
+                                            <li id="menu-item-24528" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24528"><a href="https://thietkenha.pro/don-gia-thi-cong-cafe-xay-dung-tron-goi-quan-ca-phe.html">Đơn giá thi công quán cà phê</a></li>
+                                            <li id="menu-item-21511" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21511"><a href="https://thietkenha.pro/bang-gia-thiet-ke-nha-xuong.html">Bảng giá thiết kế nhà xưởng</a></li>
+                                            <li id="menu-item-23956" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23956"><a href="https://thietkenha.pro/bang-bao-gia-thiet-ke-xay-dung-khach-san.html">Đơn giá thiết kế khách sạn</a></li>
+                                            <li id="menu-item-23974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23974"><a href="https://thietkenha.pro/don-gia-thiet-ke-nha-hang.html">Đơn giá thiết kế nhà hàng</a></li>
+                                            <li id="menu-item-24548" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24548"><a href="https://thietkenha.pro/don-gia-thi-cong-khach-san.html">Đơn giá thi công khách sạn</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-22140" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22140">
+                                        <a href="index.html#">Cẩm nang xây dựng</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-22141" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22141"><a href="https://thietkenha.pro/cam-nang-xay-dung/noi-ngoai-that">Nội ngoại thất</a></li>
+                                            <li id="menu-item-22142" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22142"><a href="https://thietkenha.pro/cam-nang-xay-dung/khong-gian-song">Không gian sống</a></li>
+                                            <li id="menu-item-22143" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-22143"><a href="https://thietkenha.pro/top-50-mau-thiet-ke-nha-ong-dep.html">Top 50+mẫu thiết kế nhà ống đẹp 2020 – 2021</a></li>
+                                            <li id="menu-item-22221" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-22221"><a href="https://thietkenha.pro/top-20-mau-nha-2-mat-tien-dep-nhat-hien-nay.html">Top 20 mẫu nhà 2 mặt tiền đẹp nhất hiện nay</a></li>
+                                            <li id="menu-item-23578" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-23578"><a href="https://thietkenha.pro/top-10-cong-ty-xay-dung-nha-uy-tin-nhat-hien-nay.html">Top 10 công ty xây dựng nhà uy tín nhất hiện nay</a></li>
+                                            <li id="menu-item-24672" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-24672"><a href="https://thietkenha.pro/thiet-ke-nha-dep-dep-tinh-te-cua-nhung-ngoi-nha-nho-kien-an-vinh.html">[Thiết kế nhà đẹp]: Đẹp tinh tế của những ngôi nhà nhỏ – Kiến An Vinh</a></li>
+                                            <li id="menu-item-28048" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-28048"><a href="https://thietkenha.pro/biet-thu-2-tang-hien-dai-ket-hop-phong-thuy-dang-cap.html">Biệt thự 2 tầng hiện đại kết hợp phong thủy đẳng cấp</a></li>
+                                            <li id="menu-item-5585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5585"><a href="https://thietkenha.pro/thuoc-lo-ban-xay-dung">Thước lỗ ban xây dựng</a></li>
+                                            <li id="menu-item-25719" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-25719"><a href="https://thietkenha.pro/thiet-ke-nha-2-tang-dep-la-mot-y-tuong-tuyet-voi.html">Thiết kế nhà 2 tầng đẹp phong thủy tốt chi phí vừa phải</a></li>
+                                            <li id="menu-item-25353" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-25353"><a href="https://thietkenha.pro/kien-truc-su-thiet-ke-nha-dep-o-dau.html">Giá thuê kiến trúc sư thiết kế nhà đẹp ở đâu</a></li>
+                                            <li id="menu-item-26039" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-26039"><a href="https://thietkenha.pro/xem-da-mat-100-mau-thiet-ke-nha-3-tang-phong-thuy-tot.html">Xem đã mắt 100 mẫu thiết kế nhà 3 tầng phong thủy tốt</a></li>
+                                            <li id="menu-item-28447" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-28447"><a href="https://thietkenha.pro/top-dau-nhung-mau-biet-thu-nha-vuon-dep-hot-nhat-hien-nay__trashed.html">Top đầu những mẫu biệt thự nhà vườn đẹp hot nhất hiện nay</a></li>
+                                            <li id="menu-item-26811" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-26811"><a href="https://thietkenha.pro/san-nevo-giai-phap-thi-cong-moi-cho-moi-cong-trinh.html">Sàn phẳng không dầm NEVO áp dụng trong thi công xây dựng</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-3772" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3772"><a href="https://thietkenha.pro/gioi-thieu.html">Giới thiệu</a></li>
+                                    <li id="menu-item-3776" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3776"><a href="https://thietkenha.pro/tuyen-dung.html">Tuyển dụng</a></li>
+                                    <li id="menu-item-5503" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5503"><a href="http://thietkenha.pro/lien-he">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- #site-navigation -->
+                        <div class="nv-header-search-wrapper">
+                            <span class="search-main"><i class="fa fa-search"></i></span>
+                            <div class="search-form-main nv-clearfix">
+                                <form role="search" method="get" class="search-form" action="index.html"> <label> <span class="screen-reader-text">Tìm kiếm cho:</span> <input type="search" class="search-field" placeholder="Tìm kiếm &hellip;" value="" name="s" /> </label> <input type="submit" class="search-submit" value="Tìm kiếm" /></form>
+                            </div>
+                        </div>
+                        <!-- .nv-header-search-wrapper -->
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+            <!-- .nv-header-menu-wrapper -->
+        </header>
+        <!-- .site-header -->
+        @RenderBody()
+        <!-- #content -->
+        @Html.Partial("_Footer")
+        <!-- #colophon -->
+        <div id="nv-scrollup" class="animated arrow-hide"><i class="fa fa-chevron-up"></i></div>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - XayDung - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <!-- #page --> <!-- Start Quick Buttons By https://muatheme.com -->
+    <div class='quick-call-button'></div>
+    <div class='call-now-button'>
+        <div>
+            <p class='call-text'><a href='https://zalo.me/0902249297' title='Chat Zalo'> Chat Zalo </a></p>
+            <a href='https://zalo.me/0902249297' title='Chat Zalo'>
+                <div class='quick-alo-ph-circle'></div>
+                <div class='quick-alo-ph-circle-fill'></div>
+                <div class='quick-alo-ph-btn-icon quick-alo-zalo-img-circle'></div>
+            </a>
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    </div>
+    <!-- /End Quick Buttons By https://muatheme.com -->
+    <noscript>
+        <style>
+            .lazyload {
+                display: none;
+            }
+        </style>
+    </noscript>
+    <script data-noptimize="1">window.lazySizesConfig = window.lazySizesConfig || {}; window.lazySizesConfig.loadMode = 1;</script>
+    <script async data-noptimize="1" src='wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wpcf7 = { "apiSettings": { "root": "https:\/\/thietkenha.pro\/wp-json\/contact-form-7\/v1", "namespace": "contact-form-7\/v1" }, "cached": "1" };
+        /* ]]> */
+    </script>
+    <div class="hotline1">
+        <table cellpadding="0" cellspacing="0" style="background:rgb(199, 18, 18); border:3px solid #e8e8e8; margin:auto; text-align:center; width:100%;    height: 57px;">
+            <tbody>
+                <tr>
+                    <td>
+                        <a class="link_title blink_me ui-link" href="tel:0902249297" style="color: #fff;font-size: 16px;">
+                            <noscript><img src="wp-content/uploads/2019/12/call.png" style="max-width:35px; vertical-align:middle; width:30%"></noscript>
+                            <img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://thietkenha.pro/wp-content/uploads/2019/12/call.png" style="max-width:35px; vertical-align:middle; width:30%"> Gọi điện
+                        </a>
+                    </td>
+                    <td>
+                        <a class="link_title ui-link" href="sms:0902249297" style="color: #fff;font-size: 16px;" target="_blank">
+                            <noscript><img src="wp-content/uploads/2019/12/fa.png" style="max-width:35px; vertical-align:middle; width:30%"></noscript>
+                            <img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://thietkenha.pro/wp-content/uploads/2019/12/fa.png" style="max-width:35px; vertical-align:middle; width:30%"> SMS
+                        </a>
+                    </td>
+                    <td>
+                        <a class="link_title ui-link" href="http://thietkenha.pro/lien-he" style="color: #fff;font-size: 16px;">
+                            <noscript><img src="wp-content/uploads/2019/12/chiduong.png" style="max-width:35px; vertical-align:middle; width:30%"></noscript>
+                            <img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20%20%22%3E%3C/svg%3E' data-src="https://thietkenha.pro/wp-content/uploads/2019/12/chiduong.png" style="max-width:35px; vertical-align:middle; width:30%">Chỉ Đường
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var masthead = document.getElementById("masthead");
+        var sticky = masthead.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                masthead.classList.add("sticky")
+            } else {
+                masthead.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script type="text/javascript" defer src="wp-content/cache/autoptimize/js/autoptimize_e17c364e15b9faaf0fc8fa6ff432dc1f.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
